@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px 0 20px;
+
+    &__logo {}
+
+    &__nav {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        gap: 45px;
+        padding-right: 40px;
+        padding-left: 40px;
+
+        a {
+            @include nav-link;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        padding-left: 16px;
+        align-items: center;
+        gap: 16px;
+        width: 50%;
+
+        img {
+            padding: 8px;
+        }
+    }
+}
