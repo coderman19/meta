@@ -1,0 +1,54 @@
+footer {
+    background-color: $footer-bg;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    padding: 100px 0 100px;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        padding-right: 78px;
+
+        & .allright {
+            padding-top: 75px;
+            width: 250px;
+            @include nav-link;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        gap: 60px;
+        width: 10%;
+        padding-right: 78px;
+
+        div {
+            width: 100px;
+        }
+
+        div a {
+            color: $white;
+            @include nav-link;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        justify-content: right;
+        width: 30%;
+        margin-left: 65px;
+    }
+
+    .three__col div {
+        width: 250px;
+    }
+}

@@ -1,6 +1,21 @@
 .icon {
+    // justify-content: right;
     width: 36px;
     height: 36px;
     background-color: $white;
+    // overflow: hidden;
     border: none;
+    margin-left: 16px;
+
+
+    img {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    img:hover {
+        background-color: $green;
+        // border: 1px solid $white;
+        transition: all .5s;
+    }
 }
